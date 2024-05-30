@@ -4,6 +4,10 @@ body {
     padding: 0;
     background-color: #560bad;
 }
+img{
+    width: 700px;
+    height: 1200px;
+}
 a {
     text-align: center;
     text-decoration: none; 
@@ -13,7 +17,7 @@ a {
     transition: color 0.3s ease;
 }
 a:hover {
-    color: #df0f88;
+    color: #5167c5;
 }
 
 nav {
