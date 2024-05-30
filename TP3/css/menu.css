@@ -66,14 +66,14 @@ h2 {
     text-align: left;
 }
 
+.text1 {
+    margin-top: -575px; 
+    margin-left: 1000px; 
+}
+
 .menu-options {
     margin-bottom: 20px;
     /* Adjust margin as needed */
-}
-
-
-.menu-option1 {
-    margin-left: 600px;
 }
 
 footer {
