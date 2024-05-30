@@ -9,14 +9,13 @@
 <body>
 
     <header>
-        <h1>Nom Du Restaurant</h1>
+        <a href="link-to-your-restaurant-website"><h1>Nom Du Restaurant</h1></a>
     </header>
 
     <nav>
         <a href="#">Home</a>
         <a href="#">Menu</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="#">Reservation</a>
     </nav>
 
     <div class="hero">
@@ -28,15 +27,32 @@
         <p>Bienvenue chez [Nom du restaurant], Où nous servons la meilleure [type de cuisine] en ville. Rejoignez-nous pour une expérience culinaire inoubliable avec nos plats exquis, élaborés à partir des ingrédients les plus frais. Que vous cherchiez un endroit pour partager un repas en famille et entre amis, ou un lieu pour une occasion spéciale, [Nom du restaurant] est le choix parfait."</p>
         <h2>Notre Menu</h2>
         <p>Explorer notre menu et decrouvrez une variété de  plats pour satisfaire tous les palais. Des hors-d'œuvre aux desserts, chaque élément est préparé avec soin et passion.</p>
-        <h2>Contactez-nous</h2>
-        <p>Adresse: [Address]</p>
-        <p>Numero de Telephone: [numero]</p>
-        <p>Email: [Email]</p>
+        <img src="/images/menu.PNG" alt="Restaurant Menu" class="menu-image">
     </div>
 
-    <footer>
-        <p>&copy; 2024 NomRestaurant. Tout droit reservé.</p>
-    </footer>
-    
+        <footer class="footer">
+            <div class="footer-info">
+                <h3>Contact Us</h3>
+                <p>123 Main Street, City, Country</p>
+                <p>Email: info@example.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Get In Touch</h3>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Your Email Address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <p>&copy; 2024 NomRestaurant. Tout droit reservé.</p>
+                </div>
+            </div>
+        </footer>
+        <footer class="footer hidden">
+        </footer>
+        
 </body>
 </html>
