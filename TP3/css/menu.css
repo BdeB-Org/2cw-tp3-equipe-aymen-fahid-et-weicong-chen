@@ -4,14 +4,16 @@ body {
     padding: 0;
     background-color: #560bad;
 }
+
 a {
     text-align: center;
-    text-decoration: none; 
-    color: #ffffff; 
+    text-decoration: none;
+    color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     transition: color 0.3s ease;
 }
+
 a:hover {
     color: #df0f88;
 }
@@ -23,11 +25,13 @@ nav {
     justify-content: space-around;
     background-color: #000000;
 }
+
 nav a {
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
+
 .hero {
     height: 200px;
     display: flex;
@@ -36,16 +40,18 @@ nav a {
     color: white;
     text-shadow: 2px 2px 4px rgb(255, 255, 255);
 }
+
 .hero h1 {
     font-size: 3rem;
     color: #fff;
     margin: 0;
 }
+
 h2 {
-    color: #000000; 
-    font-size: 24px; 
-    font-weight: bold; 
-    margin-top: 20px; 
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
@@ -53,10 +59,21 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
-.content {
+.text {
     margin: 2rem auto;
     max-width: 800px;
-    padding: 1rem;
+    padding-right: 50rem;
+    text-align: left;
+}
+
+.menu-options {
+    margin-bottom: 20px;
+    /* Adjust margin as needed */
+}
+
+
+.menu-option1 {
+    margin-left: 600px;
 }
 
 footer {
@@ -68,6 +85,7 @@ footer {
     width: 100%;
     bottom: -500px;
 }
+
 .footer {
     background-color: #000000;
     color: #fff;
@@ -80,7 +98,8 @@ footer {
     width: 109%;
 }
 
-.footer-info, .footer-contact {
+.footer-info,
+.footer-contact {
     flex: 1;
     margin-right: -10px;
 }
@@ -115,9 +134,3 @@ footer {
     width: 30px;
     height: 30px;
 }
-
-
-
-
-
-

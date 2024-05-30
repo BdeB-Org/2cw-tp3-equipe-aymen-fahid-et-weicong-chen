@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="/css/menu.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
-        <a href="link-to-your-restaurant-website"><h1>Nom Du Restaurant</h1></a>
+        <a href="/index.html">
+            <h1>Nom Du Restaurant</h1>
+        </a>
     </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Menu</a>
-        <a href="#">Reservation</a>
+        <a href="/html/menu.html">Menu</a>
+        <a href="/html/reservation.html">Reservation</a>
     </nav>
 
     <div class="hero">
-        <h1>Bienvenue chez Nom Du Restaurant</h1>
+        <h1><u>Voici les choix de menus offerts</u></h1>
     </div>
 
-    <div class="content">
-        <h2>Apropos de nous</h2>
-        <p>Bienvenue chez [Nom du restaurant], Où nous servons la meilleure [type de cuisine] en ville. Rejoignez-nous pour une expérience culinaire inoubliable avec nos plats exquis, élaborés à partir des ingrédients les plus frais. Que vous cherchiez un endroit pour partager un repas en famille et entre amis, ou un lieu pour une occasion spéciale, [Nom du restaurant] est le choix parfait."</p>
-        <h2>Notre Menu</h2>
-        <p>Explorer notre menu et decrouvrez une variété de  plats pour satisfaire tous les palais. Des hors-d'œuvre aux desserts, chaque élément est préparé avec soin et passion.</p>
-        <img src="/images/menu.PNG" alt="Restaurant Menu" class="menu-image">
+    <div class="text">
+
+        <h1 class="menu-option">Plats Principaux</h1>
+        <p>Clicker sur cette image pour obtenir plus d'informations sur les proposés</p>
     </div>
 
-        <footer class="footer">
-            <div class="footer-info">
-                <h3>Contact Us</h3>
-                <p>123 Main Street, City, Country</p>
-                <p>Email: info@example.com</p>
-                <p>Phone: +123 456 7890</p>
+
+    <footer class="footer">
+        <div class="footer-info">
+            <h3>Contact Us</h3>
+            <p>123 Main Street, City, Country</p>
+            <p>Email: info@example.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+        <div class="footer-contact">
+            <h3>Get In Touch</h3>
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Your Email Address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <div class="social-icons">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                <p>&copy; 2024 NomRestaurant. Tout droit reservé.</p>
             </div>
-            <div class="footer-contact">
-                <h3>Get In Touch</h3>
-                <form action="#" method="post">
-                    <input type="email" name="email" placeholder="Your Email Address" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-                <div class="social-icons">
-                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-                    <p>&copy; 2024 NomRestaurant. Tout droit reservé.</p>
-                </div>
-            </div>
-        </footer>
-        <footer class="footer hidden">
-        </footer>
-        
+        </div>
+    </footer>
+    <footer class="footer hidden">
+    </footer>
+
 </body>
+
 </html>
