@@ -1,6 +1,10 @@
 body{
     background-color: #d8bbff;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e969de1503c594caf561f5b40ae0e7b48f6870d4
 p{
     font-family: 'Courier New';
 }
@@ -22,3 +26,16 @@ nav {
     justify-content: space-around;
     background-color: #000000;
 }
+<<<<<<< HEAD
+=======
+=======
+
+.body-contact input[type="email"] {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+>>>>>>> 8ae614591f6dfe60aeef646d37c3335a38594351
+>>>>>>> e969de1503c594caf561f5b40ae0e7b48f6870d4
