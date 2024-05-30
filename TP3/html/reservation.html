@@ -4,24 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="/css/reservation.css">
     <title>Réserver</title>
 </head>
 
 <body>
-    <header>
-    
-
-
-
-
-
-
-
-    </header>
+    <form id="form1" onsubmit="reponse(event)">
+        <header>
+            <p><b><u>Faites votre Réservation dès maintenant</u></b>!!!</p>
+        </header>
+        Date:<br />
+        <input id="form-control" type="date" placeholder="Select DateTime" /><br /><br />
+        Heure:<br />
+        <input id="Heure" type="time" name="Heure" step="60" /><br /><br />
+        Combien de personnes:<br />
+        <input id="nombre-personnes" type="number" name="nombre-personnes" min="1" /><br /><br />
+        <input type="submit" value="Submit" />
+    </form>
 
 </body>
-
 
 <footer>
 
