@@ -49,11 +49,16 @@ h2 {
     margin-bottom: 10px;
 }
 
+.content h2 {
+    margin-bottom: 0.5rem;
+}
+
 .content {
     margin: 2rem auto;
     max-width: 800px;
     padding: 1rem;
 }
+
 footer {
     background-color: #560bad;
     color: #fff;
@@ -61,21 +66,24 @@ footer {
     padding: 1rem;
     position: absolute;
     width: 100%;
-    bottom: -5000px;
+    bottom: -1000px;
 }
 .footer {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    width: 100%;
 }
 
 .footer-info, .footer-contact {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 10px;
 }
+
 
 .footer-contact form {
     display: flex;
@@ -106,5 +114,9 @@ footer {
     width: 30px;
     height: 30px;
 }
+
+
+
+
 
 
