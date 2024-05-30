@@ -19,3 +19,31 @@ nav a {
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
+.hero {
+    /*background: url('path-to-your-image.jpg') no-repeat center center/cover;*/
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+.content {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+footer {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
