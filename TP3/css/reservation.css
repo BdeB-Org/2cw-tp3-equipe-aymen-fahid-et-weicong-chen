@@ -25,7 +25,6 @@ nav {
     justify-content: space-around;
     background-color: #000000;
 }
-
 .body-contact input[type="email"] {
     flex: 1;
     padding: 15px;
