@@ -4,7 +4,6 @@ body {
  p {
     font-family: 'Courier New';
 }
-
 a {
     text-align: center;
     text-decoration: none;
@@ -13,11 +12,9 @@ a {
     font-size: 24px;
     transition: color 0.3s ease;
 }
-
 a:hover {
     color: #df0f88;
 }
-
 nav {
     margin: 0 auto;
     max-width: 1200px;
@@ -52,18 +49,14 @@ footer {
     position: relative;
     width: 109%;
 }
-
 .footer-info, .footer-contact {
     flex: 1;
     margin-right: -10px;
 }
-
-
 .footer-contact form {
     display: flex;
     margin-top: 10px;
 }
-
 .footer-contact input[type="email"] {
     flex: 1;
     padding: 15px;
@@ -71,7 +64,6 @@ footer {
     border-radius: 5px;
     margin-right: 10px;
 }
-
 .footer-contact button {
     padding: 15px 20px;
     background-color: #fff;
@@ -79,11 +71,9 @@ footer {
     border-radius: 5px;
     cursor: pointer;
 }
-
 .social-icons a {
     margin-right: 10px;
 }
-
 .social-icons img {
     width: 30px;
     height: 30px;
