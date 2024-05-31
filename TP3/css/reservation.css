@@ -1,18 +1,7 @@
 body {
     background-color: #d8bbff;
 }
-<<<<<<< HEAD
  p {
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> e969de1503c594caf561f5b40ae0e7b48f6870d4
->>>>>>> d4e417849e7ff35d280407776089a194a2ae152d
-p{
->>>>>>> 3ecf2c1a0b89d95a1032788cf280758e9a82fb28
     font-family: 'Courier New';
 }
 
@@ -36,26 +25,67 @@ nav {
     justify-content: space-around;
     background-color: #000000;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-
->>>>>>> 3ecf2c1a0b89d95a1032788cf280758e9a82fb28
 .body-contact input[type="email"] {
     flex: 1;
     padding: 15px;
     border: none;
     border-radius: 5px;
     margin-right: 10px;
-<<<<<<< HEAD
 }
-=======
+footer {
+    background-color: #560bad;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    bottom: -500px;
 }
->>>>>>> 8ae614591f6dfe60aeef646d37c3335a38594351
->>>>>>> e969de1503c594caf561f5b40ae0e7b48f6870d4
->>>>>>> d4e417849e7ff35d280407776089a194a2ae152d
->>>>>>> 3ecf2c1a0b89d95a1032788cf280758e9a82fb28
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -250px;
+    position: relative;
+    width: 109%;
+}
+
+.footer-info, .footer-contact {
+    flex: 1;
+    margin-right: -10px;
+}
+
+
+.footer-contact form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer-contact input[type="email"] {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.footer-contact button {
+    padding: 15px 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
