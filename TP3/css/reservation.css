@@ -1,20 +1,26 @@
 body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #560bad;
 }
- p {
-    font-family: 'Courier New';
+img{
+    width: 700px;
+    height: 1200px;
 }
 a {
     text-align: center;
-    text-decoration: none;
-    color: #ffffff;
+    text-decoration: none; 
+    color: #ffffff; 
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     transition: color 0.3s ease;
 }
 a:hover {
-    color: #df0f88;
+    color: #5167c5;
 }
+
+
 nav {
     margin: 0 auto;
     max-width: 1200px;
@@ -22,14 +28,52 @@ nav {
     justify-content: space-around;
     background-color: #000000;
 }
-.body-contact input[type="email"] {
-    flex: 1;
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    margin-right: 10px;
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+.hero {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+}
+.hero h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin: 0;
+}
+h2 {
+    color: #000000; 
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-top: 20px; 
+    margin-bottom: 10px;
 }
 
+.content h2 {
+    margin-bottom: 0.5rem;
+}
+
+.content {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1rem;
+}
+
+footer {
+    background-color: #560bad;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    bottom: -500px;
+}
 .footer {
     background-color: #000000;
     color: #fff;
@@ -42,9 +86,7 @@ nav {
     width: 109%;
 }
 
-
-.footer-info,
-.footer-contact {
+.footer-info, .footer-contact {
     flex: 1;
     margin-right: -10px;
 }
@@ -79,3 +121,9 @@ nav {
     width: 30px;
     height: 30px;
 }
+
+
+
+
+
+
