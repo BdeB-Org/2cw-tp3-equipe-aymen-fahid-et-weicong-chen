@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #560bad;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #df0f88;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.hero {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin: 0;
+}
+
+h2 {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    margin-bottom: 0.5rem;
+}
+
+.text {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding-right: 50rem;
+    text-align: left;
+}
+
+.text1 {
+    margin-top: -575px;
+    margin-left: 1000px;
+}
+
+.menu-options {
+    margin-bottom: 20px;
+    /* Adjust margin as needed */
+}
+
+footer {
+    background-color: #560bad;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    bottom: -500px;
+}
+
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -250px;
+    position: relative;
+    width: 109%;
+}
+
+.footer-info,
+.footer-contact {
+    flex: 1;
+    margin-right: -10px;
+}
+
+
+.footer-contact form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer-contact input[type="email"] {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.footer-contact button {
+    padding: 15px 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
