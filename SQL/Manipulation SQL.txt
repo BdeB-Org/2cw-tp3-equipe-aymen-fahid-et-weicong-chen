@@ -1,0 +1,177 @@
+Insérer infos dans restaurant:
+
+INSERT INTO restaurant (restaurant_id)
+VALUES (1);
+
+
+Insérer infos dans menu:
+
+INSERT INTO restaurant (menu_id,restaurant_restaurant_id)
+VALUES (1,1);
+
+
+Insérer infos dans plats_principaux:
+
+INSERT INTO plats_principaux (plats_principaux_id, nom, ingrédiants, description, menu_menu_id)
+VALUES (1, 'Pizza Margherita', 'Sauce tomate, mozzarella, basilic', 'Pizza classique avec sauce tomate, fromage mozzarella et feuilles de basilic frais', 1);
+
+INSERT INTO plats_principaux (plats_principaux_id, nom, ingrédiants, description, menu_menu_id)
+VALUES (2, 'Pizza Pepperoni', 'Sauce tomate, mozzarella, pepperoni', 'Pizza classique avec des tranches de pepperoni épicé', 1);
+
+INSERT INTO plats_principaux (plats_principaux_id, nom, ingrédiants, description, menu_menu_id)
+VALUES (3, 'Pizza Végétarienne', 'Sauce tomate, mozzarella, poivrons, oignons, champignons', 'Pizza garnie de légumes assortis', 1);
+
+
+Insérer info dans desserts: 
+
+INSERT INTO desserts (desserts_id, nom, ingrédiants, description, menu_menu_id)
+VALUES (1, 'Tiramisu', 'Mouse au chocoloat', 'Déliceux', 1);
+
+
+
+
+Créer base de données:
+
+CREATE TABLE clients (
+    client_id                NUMBER NOT NULL,
+    nom                      VARCHAR2(500) NOT NULL,
+    prenom                   VARCHAR2(500) NOT NULL,
+    restaurant_restaurant_id NUMBER NOT NULL
+);
+
+ALTER TABLE clients ADD CONSTRAINT clients_pk PRIMARY KEY ( client_id );
+
+CREATE TABLE desserts (
+    desserts_id  VARCHAR2(500) NOT NULL,
+    nom          VARCHAR2(500) NOT NULL,
+    ingrédiants  VARCHAR2(500) NOT NULL,
+    description  VARCHAR2(500),
+    menu_menu_id NUMBER NOT NULL
+);
+
+ALTER TABLE desserts ADD CONSTRAINT desserts_pk PRIMARY KEY ( desserts_id );
+
+CREATE TABLE menu (
+    menu_id                  NUMBER NOT NULL,
+    restaurant_restaurant_id NUMBER NOT NULL
+);
+
+ALTER TABLE menu ADD CONSTRAINT menu_pk PRIMARY KEY ( menu_id );
+
+CREATE TABLE plats_principaux (
+    plats_principaux_id NUMBER NOT NULL,
+    nom                 VARCHAR2(500) NOT NULL,
+    ingrédiants         VARCHAR2(500) NOT NULL,
+    description         VARCHAR2(500),
+    menu_menu_id        NUMBER NOT NULL
+);
+
+ALTER TABLE plats_principaux ADD CONSTRAINT plats_principaux_pk PRIMARY KEY ( plats_principaux_id );
+
+CREATE TABLE reservation (
+    date_id                  NUMBER NOT NULL,
+    date_réservation         VARCHAR2(500) NOT NULL,
+    téléphone                NUMBER NOT NULL,
+    clients_client_id        NUMBER NOT NULL,
+    restaurant_restaurant_id NUMBER NOT NULL
+);
+
+ALTER TABLE reservation ADD CONSTRAINT reservation_pk PRIMARY KEY ( date_id );
+
+CREATE TABLE restaurant (
+    restaurant_id NUMBER NOT NULL
+);
+
+ALTER TABLE restaurant ADD CONSTRAINT restaurant_pk PRIMARY KEY ( restaurant_id );
+
+ALTER TABLE clients
+    ADD CONSTRAINT clients_restaurant_fk FOREIGN KEY ( restaurant_restaurant_id )
+        REFERENCES restaurant ( restaurant_id );
+
+ALTER TABLE desserts
+    ADD CONSTRAINT desserts_menu_fk FOREIGN KEY ( menu_menu_id )
+        REFERENCES menu ( menu_id );
+
+ALTER TABLE menu
+    ADD CONSTRAINT menu_restaurant_fk FOREIGN KEY ( restaurant_restaurant_id )
+        REFERENCES restaurant ( restaurant_id );
+
+ALTER TABLE plats_principaux
+    ADD CONSTRAINT plats_principaux_menu_fk FOREIGN KEY ( menu_menu_id )
+        REFERENCES menu ( menu_id );
+
+ALTER TABLE reservation
+    ADD CONSTRAINT reservation_clients_fk FOREIGN KEY ( clients_client_id )
+        REFERENCES clients ( client_id );
+
+ALTER TABLE reservation
+    ADD CONSTRAINT reservation_restaurant_fk FOREIGN KEY ( restaurant_restaurant_id )
+        REFERENCES restaurant ( restaurant_id );
+        
+ BEGIN
+  ORDS.enable_object (
+    p_enabled      => TRUE, -- Default  { TRUE | FALSE }
+    p_schema       => 'RESTSCOTT',
+    p_object       => 'CLIENTS',
+    p_object_type  => 'TABLE', -- Default  { TABLE | VIEW }
+    p_object_alias => 'client'
+  );
+
+      COMMIT;
+END;
+/
+
+BEGIN
+  ORDS.enable_object (
+    p_enabled      => TRUE, -- Default  { TRUE | FALSE }
+    p_schema       => 'RESTSCOTT',
+    p_object       => 'DESSERTS',
+    p_object_type  => 'TABLE', -- Default  { TABLE | VIEW }
+    p_object_alias => 'desserts'
+  );
+
+  COMMIT;
+END;
+/
+
+BEGIN
+  ORDS.enable_object (
+    p_enabled      => TRUE, -- Default  { TRUE | FALSE }
+    p_schema       => 'RESTSCOTT',
+    p_object       => 'MENU',
+    p_object_type  => 'TABLE', -- Default  { TABLE | VIEW }
+    p_object_alias => 'menu'
+  );
+
+  COMMIT;
+END;
+/
+
+
+BEGIN
+  ORDS.enable_object (
+    p_enabled      => TRUE, -- Default  { TRUE | FALSE }
+    p_schema       => 'RESTSCOTT',
+    p_object       => 'PLATS_PRINCIPAUX',
+    p_object_type  => 'TABLE', -- Default  { TABLE | VIEW }
+    p_object_alias => 'plats_principaux'
+  );
+
+  COMMIT;
+END;
+/
+
+
+BEGIN
+  ORDS.enable_object (
+    p_enabled      => TRUE, -- Default  { TRUE | FALSE }
+    p_schema       => 'RESTSCOTT',
+    p_object       => 'RESTAURANT',
+    p_object_type  => 'TABLE', -- Default  { TABLE | VIEW }
+    p_object_alias => 'restaurant'
+  );
+
+  COMMIT;
+END;
+/
+
